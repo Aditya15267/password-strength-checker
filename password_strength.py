@@ -17,7 +17,6 @@ def check_password_strength(password: str) -> str:
     }
 
     strength = sum(bool(val) for val in criteria.values())
-    print("the strength in value", strength)  # Debugging line to check the strength value
 
     if strength <= 2:
         return "Weak"
