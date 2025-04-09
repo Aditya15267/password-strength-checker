@@ -9,7 +9,7 @@ def check_password_strength(password: str) -> str:
     """
     strength = 0
     criteria = {
-        "length": len(password) >= 8,
+        "length": len(password) > 8,
         "lowercase": re.search(r"[a-z]", password),
         "uppercase": re.search(r"[A-Z]", password),
         "digit": re.search(r"[0-9]", password),
